@@ -1,0 +1,55 @@
+<div class="content-container">
+
+    <div class="auth-container">
+        {{! Display a message if one was provided. }}
+        {{#if toastMessage}}
+        <p>{{toastMessage}}</p>
+        {{/if}}
+
+        <h1 class="auth-title">My Account Detail</h1>
+
+        <div class="avatar-detail"><img class="profile-avatar" src="{{user.icon}}"></div>
+        
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th>Username</th>
+                    <td>{{user.username}}</td>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <td>{{user.fname}}</td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>{{user.lname}}</td>
+                </tr>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td>{{user.dateOfBirth}}</td>
+                </tr>
+                <tr>
+                    <th>Brief description of myself:</th>
+                    <td>{{user.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="./updateAccount" method="GET">
+                <button type="submit">Update My Detail</button>
+        </form>
+
+        <form action="./updatePassword" method="GET">
+                <button type="submit">Update My Password</button>
+        </form>
+
+        
+        
+        <div> Want to delete your account?
+            <a href="./deleteAccount" onlick="return confirm('Are you sure you want to delete your account?')"> <em><u>Delete here.</u></em></a>
+        </div>
+
+    </div>
+</div>
+
+
