@@ -1,7 +1,7 @@
 Final project; Team project-group-charcoal-caterpillars
 ==========================================================================================
 ## 📺 Video Presentation
-Check out our video presentation for an overview of the project:
+Check out our video presentation for an overview of the project: https://youtu.be/Jxw4xhB20N0
 
 ## Brief introduction of webapp
 Our webapp has been designed for users who are interested in writing down and noting the things going on in their life. It is a diverse blog that allows for any one to express their interests and post whatever it is that they're feeling!
